@@ -1,7 +1,7 @@
 require("dotenv").config();
 import dotenv from "dotenv";
 dotenv.config();
-import "@nomiclabs/hardhat-etherscan";
+import "@nomicfoundation/hardhat-verify";
 import "@nomiclabs/hardhat-truffle5";
 import "@nomiclabs/hardhat-waffle";
 import "hardhat-gas-reporter";
@@ -31,7 +31,8 @@ const MNEMONIC =
   "ajkskjfjksjkf ssfaasff asklkfl klfkas dfklhao asfj sfk klsfjs fkjs";
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
-const ARBISCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "ArbitrumScan API key";
+const ARBISCAN_API_KEY =
+  process.env.ETHERSCAN_API_KEY || "ArbitrumScan API key";
 
 module.exports = {
   solidity: {
@@ -52,10 +53,10 @@ module.exports = {
     arbsepolia: {
       networkId: 421614,
       url: ARBITRUM_SEPOLIA_RPC_URL,
-      accounts: [PRIVATE_KEY],
-      // accounts: {
-      //   mnemonic: MNEMONIC,
-      // },
+      // accounts: [PRIVATE_KEY],
+      accounts: {
+        mnemonic: MNEMONIC,
+      },
     },
   },
   gasReporter: {
@@ -64,6 +65,9 @@ module.exports = {
   },
   etherscan: {
     apiKey: ARBISCAN_API_KEY,
+  },
+  sourcify: {
+    enabled: true,
   },
   paths: {
     sources: "./contracts",
