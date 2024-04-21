@@ -12,8 +12,6 @@ import "@nomiclabs/hardhat-ethers";
 
 import { task } from "hardhat/config";
 
-// This is a sample Hardhat task. To learn how to create your own go to
-// https://hardhat.org/guides/create-task.html
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
 
@@ -21,18 +19,19 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
     console.log(account.address);
   }
 });
-
 // TESTNET
-const SEPOLIA_RPC_URL = process.env.SEPOLIA_RPC_URL || "https://ETH-RPC-URL";
+// ARBRITRUM-SEPOLIA
+
+const ARBITRUM_SEPOLIA_RPC_URL =
+  process.env.ARBITRUM_SEPOLIA_RPC_URL ||
+  "https://arbitrum-sepolia.infura.io/v3/api_key";
 
 const MNEMONIC =
   process.env.MNEMONIC ||
   "ajkskjfjksjkf ssfaasff asklkfl klfkas dfklhao asfj sfk klsfjs fkjs";
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
-const POLYGONSCAN_API_KEY =
-  process.env.POLYGONSCAN_API_KEY || "lklsdkskldjklgdklkld";
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "Etherscan API key";
+const ARBISCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "ArbitrumScan API key";
 
 module.exports = {
   solidity: {
@@ -50,9 +49,9 @@ module.exports = {
       initialBaseFeePerGas: 0, // workaround from https://github.com/sc-forks/solidity-coverage/issues/652#issuecomment-896330136 . Remove when that issue is closed.
     },
     // TESTNET NETWORKS
-    sepolia: {
-      networkId: 11155111,
-      url: SEPOLIA_RPC_URL,
+    arbsepolia: {
+      networkId: 421614,
+      url: ARBITRUM_SEPOLIA_RPC_URL,
       accounts: [PRIVATE_KEY],
       // accounts: {
       //   mnemonic: MNEMONIC,
@@ -64,10 +63,7 @@ module.exports = {
     currency: "USD",
   },
   etherscan: {
-    apiKey: {
-      polygonMumbai: POLYGONSCAN_API_KEY,
-      sepolia: ETHERSCAN_API_KEY,
-    },
+    apiKey: ARBISCAN_API_KEY,
   },
   paths: {
     sources: "./contracts",

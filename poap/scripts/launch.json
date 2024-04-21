@@ -1,0 +1,7 @@
+{
+    "contractName" : "Poap",
+    "constructorParams":{
+            "param1" :"Globe Music Fest",
+            "param2" : "GMF"
+        }
+}

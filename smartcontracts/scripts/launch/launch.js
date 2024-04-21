@@ -9,11 +9,11 @@ let contractAddress
 let blockNumber
 let Verified = false
 
-async function TokenFestHolderDeploy() {
+async function SprkHausHolderDeploy() {
     const constructorParam = jsonContent.constructorParams
 
-    const TokenFestHolderFactory = await hre.ethers.getContractFactory("TokenFestHolder")
-    const TokenFestHolder = await TokenFestHolderFactory.deploy(
+    const SprkHausHolderFactory = await hre.ethers.getContractFactory("SprkHausHolder")
+    const SprkHausHolder = await SprkHausHolderFactory.deploy(
         constructorParam.param1,
         constructorParam.param2,
         constructorParam.param3,
@@ -23,16 +23,16 @@ async function TokenFestHolderDeploy() {
         constructorParam.param7
     )
 
-    await TokenFestHolder.deployed()
-    console.log("TokenFestHolder Deployed to: ", TokenFestHolder.address)
+    await SprkHausHolder.deployed()
+    console.log("SprkHausHolder Deployed to: ", SprkHausHolder.address)
 
-    contractAddress = TokenFestHolder.address
-    blockNumber = TokenFestHolder.provider._maxInternalBlockNumber
+    contractAddress = SprkHausHolder.address
+    blockNumber = SprkHausHolder.provider._maxInternalBlockNumber
     
     /// VERIFY
     if (hre.network.name != "hardhat") {
-        await TokenFestHolder.deployTransaction.wait(6)
-        await verify(TokenFestHolder.address, [
+        await SprkHausHolder.deployTransaction.wait(6)
+        await verify(SprkHausHolder.address, [
             constructorParam.param1,
             constructorParam.param2,
             constructorParam.param3,
@@ -44,10 +44,10 @@ async function TokenFestHolderDeploy() {
     }
 }
 
-async function TokenFestCollabDeploy() {
+async function SprkHausCollabDeploy() {
     const constructorParam = jsonContent.constructorParams
-    const TokenFestCollabFactory = await hre.ethers.getContractFactory("TokenFestCollab")
-    const TokenFestCollab = await TokenFestCollabFactory.deploy(
+    const SprkHausCollabFactory = await hre.ethers.getContractFactory("SprkHausCollab")
+    const SprkHausCollab = await SprkHausCollabFactory.deploy(
         constructorParam.param1,
         constructorParam.param2,
         constructorParam.param3,
@@ -55,14 +55,14 @@ async function TokenFestCollabDeploy() {
         constructorParam.param5,
         constructorParam.param6
     )
-    await TokenFestCollab.deployed()
-    console.log("TokenFestCollab Deployed to:", TokenFestCollab.address)
-    contractAddress = TokenFestCollab.address
-    blockNumber = TokenFestCollab.provider._maxInternalBlockNumber
+    await SprkHausCollab.deployed()
+    console.log("SprkHausCollab Deployed to:", SprkHausCollab.address)
+    contractAddress = SprkHausCollab.address
+    blockNumber = SprkHausCollab.provider._maxInternalBlockNumber
     /// VERIFY
     if (hre.network.name != "hardhat") {
-        await TokenFestCollab.deployTransaction.wait(6)
-        await verify(TokenFestCollab.address, [
+        await SprkHausCollab.deployTransaction.wait(6)
+        await verify(SprkHausCollab.address, [
             constructorParam.param1,
             constructorParam.param2,
             constructorParam.param3,
@@ -91,13 +91,13 @@ async function Token() {
 }
 
 async function main() {
-    //TokenFestHolder
-    if (jsonContent.contractName == "TokenFestHolder") {
-        await TokenFestHolderDeploy()
+    //SprkHausHolder
+    if (jsonContent.contractName == "SprkHausHolder") {
+        await SprkHausHolderDeploy()
     }
-    /// TokenFestCollab CONTRACT
-    if (jsonContent.contractName == "TokenFestCollab") {
-        await TokenFestCollabDeploy()
+    /// SprkHausCollab CONTRACT
+    if (jsonContent.contractName == "SprkHausCollab") {
+        await SprkHausCollabDeploy()
     }
 
     /// ERC20 

@@ -23,7 +23,7 @@ The JSON file should have the following format:
 
 ```shell
 {
-    "contractName" : "TokenFestHolder",
+    "contractName" : "SprkHausHolder",
     "constructorParams":{
             "param1" :"0x83AD8ddAdb013fbA80DE0d802FD4fB1a949AD79f",
             "param2" :"Soumalya Music Fest",
@@ -40,7 +40,7 @@ The JSON file should have the following format:
 
 ```shell
 {
-    "contractName" : "TokenFestCollab",
+    "contractName" : "SprkHausCollab",
     "constructorParams":{
             "param1" :"0x83AD8ddAdb013fbA80DE0d802FD4fB1a949AD79f",
             "param2" :"Soumalya Music Fest",

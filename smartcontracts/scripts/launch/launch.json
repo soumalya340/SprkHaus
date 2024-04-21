@@ -1,5 +1,5 @@
 {
-    "contractName" : "TokenFestCollab",
+    "contractName" : "SprkHausCollab",
     "constructorParams":{
             "param1" :"0x83AD8ddAdb013fbA80DE0d802FD4fB1a949AD79f",
             "param2" :"Globe Music Fest",
