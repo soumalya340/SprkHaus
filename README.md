@@ -166,7 +166,7 @@ SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast a
 - **Crowdfunding Events:** Contributions through NFT purchases must be made within the event’s specific crowdfunding window to count towards the project's goal.
 
 ## Demo
-- **Link to a Live Demo:** [SprkHaus Live Demo](https://dream-starter-ashen.vercel.app/)
+- **Link to a Live Demo:** [SprkHaus Live Demo](https://sprk-lemon.vercel.app/)
 
 ## SprkHaus Roadmap: Future Development Plans
 
