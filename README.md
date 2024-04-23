@@ -1,7 +1,9 @@
-# SprkHaus
-Where your Dreams meet reality. A fundraising Dapp for your Ideas
+<img src="./images/logo.png" width="100" height="100">
 
-![SprkHaus Logo](./images/logo.png)
+# SprkHaus
+Where your Dreams meet reality. A fundraising  for your Ideas
+
+
 
 # SprkHaus: The Future of Crowdfunding on Blockchain for Events and Startups
 
@@ -17,7 +19,7 @@ Where your Dreams meet reality. A fundraising Dapp for your Ideas
     - [NFT Contract](#nft-contract)
     - [Stake Contract](#stake-contract)
     - [Interaction with the Morph Blockchain](#interaction-with-the-Morph-blockchain)
-  - [App Technology Stack](#app-technology-stack)
+  - [WebApp Technology Stack](#WebApp-technology-stack)
 - [How To Use It](#how-to-use-it)
 - [Demo](#demo)
 - [SprkHaus Roadmap: Future Development Plans](#SprkHaus-roadmap-future-development-plans)
@@ -33,10 +35,12 @@ SprkHaus revolutionizes the crowdfunding landscape, extending beyond the realms 
 2. **Contributors (Product Users)**: Individuals interested in contributing to events by purchasing NFTs representing their contributions.
 
 - In SprkHaus there are two types of NFT’s : -
-    1. **SprkHaus Collab** : - This  NFTs provide contributors with additional benefits returns for supporting projects/ideas and  SprkHaus Holder NFTs will surpass traditional bank interest rates, because it is offering profits in a short period 
-    2. **SprkHaus Holde**r : - It signify a regular contribution or ticket purchase,  donation for a idea with no financial returns 
+    1. **SprkHaus Collab** : - It signify a regular contribution or ticket purchase,  donation for a idea with no financial returns 
 - In the crowdfunding process, proposal creators are required to stake up to 20% of the crowdfunding goal. However, this staking requirement is significantly more advantageous than seeking a loan from a bank, as it entails a lower down payment and fosters a more collaborative funding model.
-- Contributors will get Proof of Attendance Tokens (POAPs) as a gesture of appreciation once events, regardless of NFT type, have finished and through which community creation can be done. For a startup venture, contributors may also gain early access to products or services.
+
+    2. **SprkHaus Holder** : - This  NFTs provide contributors with additional benefits returns for supporting projects/ideas and  SprkHaus Holder NFTs will surpass traditional bank interest rates, because it is offering profits in a short period .
+
+- Contributors will get Proof of Attendance Tokens (POAPs) as a gesture of WebAppreciation once events, regardless of NFT type, have finished and through which community creation can be done. For a startup venture, contributors may also gain early access to products or services.
 
 WIN WIN FOR ALL
 
@@ -47,7 +51,7 @@ WIN WIN FOR ALL
 - **Community Voting:** Proposals are open for community voting for the specified duration. Proposals meeting the required vote threshold proceed to crowdfunding.
 
 ### Crowdfunding Phase:
-- **Funding Goals:** If the proposal is approved, it moves to the crowdfunding phase where users can contribute funds.
+- **Funding Goals:** If the proposal is WebApproved, it moves to the crowdfunding phase where users can contribute funds.
 - **Goal Achievement:** If the crowdfunding goal is reached within the set timeframe, the project moves forward. If not, contributions are refunded.
 
 ### Project Execution:
@@ -56,7 +60,7 @@ WIN WIN FOR ALL
 
 ### Dispute Resolution:
 - **Validation Period:** A one-week dispute period allows contributors to review and contest the expense reports.
-- **Community Decision:** Discrepancies lead to a community vote. If the community votes against the expenses, the initiator loses the staked amount. If approved, the project continues.
+- **Community Decision:** Discrepancies lead to a community vote. If the community votes against the expenses, the initiator loses the staked amount. If WebApproved, the project continues.
 
 ### Project Conclusion:
 - **Feedback & Review:** After the event, participants provide feedback, influencing the initiator’s future proposals and reputation on the platform.### Project Conclusion:
@@ -72,7 +76,7 @@ WIN WIN FOR ALL
 Navigating the traditional crowdfunding realm can be fraught with challenges: opaque financial management, uncertain community engagement, and limited support for diverse projects. For creators, whether they’re planning an immersive concert or launching a gaming startup, these barriers can dampen innovation and hinder the realization of their visions.
 
 ## The Solution
-SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast array of projects from entertainment events to startup ventures. It democratizes the funding process, offering transparent financial tracking, community-driven governance, and innovative funding mechanisms through NFTs. This approach not only guarantees transparency and security but also cultivates a vibrant community around each project, ensuring a dedicated user base and sustainable growth.
+SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast array of projects from entertainment events to startup ventures. It democratizes the funding process, offering transparent financial tracking, community-driven governance, and innovative funding mechanisms through NFTs. This WebApproach not only guarantees transparency and security but also cultivates a vibrant community around each project, ensuring a dedicated user base and sustainable growth.
 
 ## Key Features
 
@@ -80,7 +84,7 @@ SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast a
 
 - **Proposal and Voting System**: A gateway for individuals to pitch ideas or organizations to submit diverse project ideas. Three types of voting will then take place: 
   1. Specified Users 
-  2. Everyone using the application 
+  2. Everyone using the WebApplication 
   3. Dependent on location. If it received a sufficient number of votes, say 51%, they may move on to the next round, which is to start their own smart contracts for fundraising.
 
 - **NFT-Driven Funding and Rewards**: Unique utilization of NFTs for funding, offering SprkHaus Holder and SprkHaus Collab options, providing contributors with tangible benefits and a stake in the project’s success.
@@ -103,7 +107,7 @@ SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast a
 
 ## Frontend Technology Stack:
 
-- **Next.js**: A React framework that enables functionality such as server-side rendering and generating static websites for React-based web applications.
+- **Next.js**: A React framework that enables functionality such as server-side rendering and generating static websites for React-based web WebApplications.
 - **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 
 ### Website Screenshot
@@ -118,7 +122,7 @@ SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast a
 ## How To Use It
 
 
-### App Screenshot
+### WebApp Screenshot
 <img src="./images/MobileImage1.png" width="200" height="400">
 
 ### Step 1: Connect Your Wallet
@@ -166,7 +170,7 @@ SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast a
 - **Crowdfunding Events:** Contributions through NFT purchases must be made within the event’s specific crowdfunding window to count towards the project's goal.
 
 ## Demo
-- **Link to a Live Demo:** [SprkHaus Live Demo](https://sprk-lemon.vercel.app/)
+- **Link to a Live Demo:** [SprkHaus Live Demo](https://sprk-lemon.vercel.WebApp/)
 
 ## SprkHaus Roadmap: Future Development Plans
 
