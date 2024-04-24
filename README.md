@@ -1,6 +1,8 @@
 <img src="./images/logo.png" width="100" height="100">
 
-# SprkHaus
+
+# SprkHaus 
+
 Where your Dreams meet reality. A fundraising  for your Ideas
 
 
@@ -113,49 +115,39 @@ SprkHaus reimagines crowdfunding with a blockchain backbone, supporting a vast a
 ### Website Screenshot
 ![Website Screenshot](./images/website.png)
 
-## Smart Contracts
-
-
-
-
 
 ## How To Use It
 
 
 ### WebApp Screenshot
-<img src="./images/MobileImage1.png" width="200" height="400">
+
 
 ### Step 1: Connect Your Wallet
 **Description:** Begin by connecting your digital wallet to SprkHaus. If you don't have one, use zkLogin for enhanced privacy and security.
 
-<img src="./images/2.png" width="200" height="400">
 
 ### Step 2: Create Proposals/Ideas
 **Description:** Navigate to the Launch section and submit your project proposal. Detail your project and specify the voting timeframe to gather community support.
 
-<img src="./images/3.png" width="200" height="400">
 
 
 ### Step 3: Vote on Ongoing Proposals
 **Description:** Explore the Ongoing Proposals under the Explore section. Vote on projects you believe in to help them reach the crowdfunding stage.
 
-<img src="./images/31a.png" width="200" height="400">
 
 ### Step 4: Convert Proposals to Crowdfunding Events
 **Description:** If your proposal gathers enough votes, you can initiate the crowdfunding phase. Define the fundraising period and the NFT collection for your project.
 
-<img src="./images/6.png" width="200" height="400">
 
 
 ### Step 5: Stake for Your Event
 **Description:** As an event organizer, secure your project by staking a percentage of the fundraising goal. This step ensures commitment and builds trust with contributors.
 
-<img src="./images/4.png" width="200" height="400">
+
 
 ### Step 6: Support Events by Minting NFTs
 **Description:** Participate in crowdfunding events by minting NFTs. Your contribution helps bring the project to life, and you receive unique NFTs in return.
 
-<img src="./images/5.png" width="200" height="400">
 
 ### My Crowdfunding Event NFTs
 **Description:** Track and manage your NFTs from supported crowdfunding events. View your collection and any associated benefits or rewards.
